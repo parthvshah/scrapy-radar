@@ -1,5 +1,5 @@
 # scrapy-radar
-A simple program in python to read out the latest F1 news.
+A simple program in python to read out the latest Formula 1 news.
 
 This program uses the Google text-to-speech module in python3. It downloads an RSS feed file from BBC and formats it. It then sends this text to the Google text-to-speech API and obtains the playable mp3 file.
 
