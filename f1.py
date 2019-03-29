@@ -5,7 +5,7 @@ from gtts import gTTS
 os.system("del \"rss.xml@edition=uk\"")
 os.system("del speech.mp3")
 
-os.system("wget64.exe http://feeds.bbci.co.uk/sport/formula1/rss.xml?edition=uk")
+os.system("wget http://feeds.bbci.co.uk/sport/formula1/rss.xml?edition=uk")
 print("State: Downloading the RSS feed.")
 
 #Modifying the file
@@ -45,6 +45,6 @@ def textToSpeech(string):
     os.system("start speech.mp3")
 
 if __name__=="__main__":
-    megaString = cleanFile("rss.xml@edition=uk")
+    megaString = cleanFile("rss.xml?edition=uk")
     textToSpeech(megaString)
 
